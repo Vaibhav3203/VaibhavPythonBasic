@@ -16,4 +16,3 @@ def read_data(file, sheetname, row_num, column_num):
     workbook = openpyxl.load_workbook(file)
     sheet = workbook[sheetname]
     return (sheet.cell(row_num, column_num).value)
-    
